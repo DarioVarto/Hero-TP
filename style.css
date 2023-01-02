@@ -1,0 +1,395 @@
+*{
+ margin: 0px;
+ padding: 0px; 
+ font-family: 'Exo', sans-serif;
+ background-color: rgb(243, 241, 239);
+}
+
+
+header{                                     /* Inicio del header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 8rem;
+}
+
+
+header>a{text-decoration: none;}
+
+
+.logo{
+    font-size: 2.5rem;
+    font-weight:900;
+    color: black;
+    padding-left: 3rem;
+}
+
+
+.logoImg{font-size: 2.5rem;}
+
+
+nav>a{
+    text-decoration: none;
+    background-color: transparent;
+    margin-left: 4rem;
+    color: rgb(77, 75, 73);
+}
+
+nav>a:hover{color: black;}
+
+
+.hamburguesa{display: none;}
+
+
+header>button{
+    padding: 0.65rem 1.8rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    color: rgb(35, 33, 31);
+    border: solid 2px rgb(124, 122, 120)
+}
+
+button:hover{transform: scale(1.1);}                                               /*  Fin del header */
+   
+
+
+                                                 /* Inicio del Hero */
+.hero{                                       
+    display: flex;                            
+    justify-content: center;    
+}
+
+
+.txt{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight:900;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10rem;   
+}
+
+
+
+.txt>h5{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.contenedorButton{
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+
+.get{
+    padding: 0.8rem 2.8rem;
+    background-color: black;
+    color: rgb(243, 241, 239);
+    font-size: 1.2rem;
+}
+
+
+.let{
+    padding: 0.8rem 2.8rem;
+    font-size: 1.2rem;
+}
+
+
+.persona{width: 40%;}
+
+
+span{color: rgb(233, 78, 53);}
+
+
+.london{
+    color:black;
+    text-decoration: line-through 3px;
+}                                                       /*  Fin del Hero*/
+
+
+.diagonal{                                              /* Texto en diagonal */
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 3rem 0.6rem;
+    color: rgb(239, 237, 235);
+    margin-top: 0;
+    margin-bottom: 4rem;
+    transform: skew(0, -4deg);
+    z-index: 3;
+}
+
+.diagonal>span{background-color: black;}
+
+.lineal{display: none;}                                                /* Texto lineal */
+    
+
+
+@media(max-width:1660px){
+    .txt{
+        font-size: 1.8rem;
+        margin-top: 6rem;
+    }
+    .persona{width: 35%;}
+
+     header{padding-bottom: 6rem;}
+}
+
+
+@media(max-width:1260px){
+    
+    .txt{font-size: 1.6rem;}
+    
+    header{padding-bottom: 4rem;}
+    .let, .get{
+        padding: 0.8rem 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media(max-width:1180px){
+    
+    .txt{font-size: 1.4rem;}
+
+    .txt>h5{font-size: 1.2rem;}
+
+}
+
+@media(max-width:1080px){
+    
+    
+    header{padding-bottom: 2rem;}
+
+    .logo{padding-left: 0.8rem;}
+
+    .diagonal{
+       transform: none;
+       padding: 1.5rem;
+       z-index: 0;
+       margin-top: 0.4rem;
+    }
+
+
+    .let, .get{
+        padding: 0.6rem 1.4rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-bottom: 0px;}
+
+
+    .txt{
+        font-size: 1.2rem;
+        margin-top: 4rem;
+    }
+
+
+    .txt>h5{font-size:1rem ;}
+
+    .persona{width: 30%;}
+
+
+    nav{margin-left: 0.5rem;}
+
+    nav>a{margin-left: 1rem;}
+    }
+
+
+@media(max-width:860px){
+   
+   
+    nav{display: none;}
+   
+   
+    header>button{display: none;}
+
+   
+    .hamburguesa{
+        display: inline;
+        font-size: 2rem;
+    }
+   
+   
+    .hamburguesa:hover{transform: scale(1.1);}
+   
+   
+    .hero{
+        flex-direction: column-reverse;
+        margin-bottom: 4rem;
+        width: 100%;
+        align-items: center;
+    }
+
+   
+    .diagonal{display:none;}
+   
+   
+    .lineal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding:0.6rem 0;
+        background-color: black;
+    }
+   
+   
+    .lineal>div{
+        background-color: black;
+        color: rgb(239, 237, 235);
+        font-size: 1.5rem;
+    }
+   
+   
+    div>span{background-color: black;}
+   
+   
+   .txt{
+        text-align: center;
+        margin-left: 0px;
+        align-items: center;
+   }
+   
+   
+   .persona{width: 40%;}
+}
+ 
+
+
+@media(max-width:835px){
+    .let, .get{
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-bottom: 0px;}
+    }
+
+
+
+@media(max-width:620px){
+    
+    
+    .contenedorButton{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .txt{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    .persona{
+        margin-bottom: 1rem;  
+    }
+
+
+   .lineal>div{
+        font-size:0.8rem;
+    }
+
+
+   .let, .get{
+        padding: 0.2rem 0.8rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+    }
+
+
+   .logo{
+        font-size: 1.5rem;
+    }
+
+
+    .logoImg{
+        font-size: 1.5rem;
+    }
+
+
+    .hamburguesa{
+        font-size: 1.5rem;
+    }
+}
+ 
+
+
+@media(max-width: 285px){
+    
+
+    .let, .get{
+        padding: 0.2rem 0.6rem;
+        font-size: 0.6rem;
+        margin-bottom: 0px;
+    }
+
+    .lineal{
+        margin-bottom: 3rem;   
+    }
+
+
+     .lineal>div{
+        font-size:0.5rem;
+    }
+
+   .logo{
+        font-size: 1.2rem;
+    }
+
+
+    .logoImg{
+        font-size: 1.2rem;
+    }
+
+
+    .hamburguesa{
+        font-size: 1.2rem;
+    }
+
+
+    .txt{
+        font-size: 0.8rem;
+    }
+    .txt>h5{
+        text-align: center;
+     }
+}
+
+
+
+@media(max-width:190px){
+    
+    
+    .let, .get{
+        padding: 0.1rem 0.6rem;
+        font-size: 0.6rem;
+        margin-bottom: 0px;
+    }
+    
+    
+    .logo{
+        font-size: 1rem;
+    }
+    
+    
+    .logoImg{
+        font-size: 1rem;
+    }
+    
+    
+    .hamburguesa{
+        font-size: 1rem;
+    }
+    
+    
+    .txt{
+        font-size: 0.6rem;
+    }
+
+}
